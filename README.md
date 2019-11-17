@@ -2,7 +2,7 @@
 
 A recreation of the Amiga2000 motherboard using Sprint Layout
 
-If you want to build this board please use the gerbers in Amiga2000rev6.2-XU1-PST518B.mod.zip. The only thing not applied are the two resistorpacks at U603 and U604. I will add them later.
+If you want to build this board please use the gerbers in Amiga2000rev6.2.incl.mods.zip. The only thing not applied are footprints for the r2-c1 combo as it involves moving a lot of traces and I dont know what it does to the working of the board. All other 6.2 fixes are applied.
 
 I started with the complete removal of all components of an Amiga2000 rev 6.2 motherboard. I than removed all the print and 
 the green layer so the bare copper showed.
@@ -11,6 +11,8 @@ The motherboard was than scanned at 600 dpi on both sides (saved as jpeg) which 
 Set the dpi of the scanned images to 600dpi
 Set the board width to 416.95 mm and the board height to 346.25 mm
 Adjust the x and y offset to lineup the scannes with the .lay file
+
+DO NOT POPULATE: C902, C917, R901, FB904, FB906, RP904, RP906, RP905, C230, C240, they are unpopulated on factory 6.2 rev, so, let them as-is.
 
 In Sprint Layout I than placed all the components (the ones that weren't there I created myself).
 Then I put in all the via's.
@@ -75,7 +77,30 @@ Update 9-8-2019:
 The problem with the videoextention slot is solved. Flickerfixers that use that slot are working fine now.
 I made new gerbers and updated the github page.
 
-The board is now fully working.
-I rest my case
+Update 20-8-2019:
+Changed some footprints and cleaned up the pcb a little.
+New gerbers are uploaded
+
+Update 27-8-2019:
+I was pointed out that on the original board D15 of the isa slots was not terminated properly. On the original board this is the case. It is fixed in version 1.6 of the board. If you are not using the isa slots than version 1.5 works fine. Anyway I uploaded a 1.6 version of the board together with the gerber files.
+
+Update 28-9-2019
+Widened the +5V, +12V and -12V traces to 1.4 mm. If you populate all the slots it might not have enough power when trace is 1 mm. When you order the board with 70um copper it can now handle 6 amps. I uploaded a 1.7 version of the design and with it the gerber zip
+
+Update 21-10-2019
+Changed the battery to a buttoncell battery and placed an diode D803 as the buttonbattery cannot be charged. I also uploaded the bomfile created from the sprintlayout file for Rev 1.7.5.
+Changed the Rev to 1.7.5 and uploaded new sprint and gerber files.
+
+Update 7-11-2019
+Widened the +5V and +12V traces to 1.6 mm. I uploaded new gerber files, sprint file and BOM file 1.8.
+I also changed the rev number to Rev 1.8.
+
+Update 10-11-2019
+Added some SMD leds with resistors to show if some voltages are okay, also I widened the -12V traces to 1.6 mm. I changed the rev number to Rev 1.8.5 and uploaded new gerber files, sprint and BOM file.
+
+Update 17-11-2019
+John Hertell made a locator for version 1.8.5 of my Amiga2000 board. It can be found on:
+Not yet: I will get a better one later on. I will post it here.
+
 
 
