@@ -127,5 +127,14 @@ I am happy with the result and say cherio.
 Update 7-1-2020
 I have put the order details in this readme file.
 
+Update 5-6-2020
+Changed the value of rp101 from 4.7k to 2.7k as thats the value in the schematic.
+Also i added a list with ordernrs for several companies
 
+Update 25-9-2020
+Changed a typo in the value of C305 from 0.01uf to 0.1uf as thats the value in the schematic.
+C909 is not populated on the original board so it schould be empty
+Also changed the order list and sprint file accordingly.
 
+Update 26-2-2021
+Added a binsign to the silkscreen
